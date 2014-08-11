@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+}
+
+@font-face {
+  font-family: Calibri;
+  src: url("PFBeauSansPro-Bold.ttf");
+}
+
+#timer {
+  font-family: Calibri;
+  margin-left: 5%;
+  margin-top: 16%;
+  color: white;
+}
+
+#buttons {
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+button {
+  padding: 15px;
+}
+
+#increase_hour,
+#increase_minute,
+#increase_second {
+  background-color: green;
+}
+
+#decrease_hour,
+#decrease_minute,
+#decrease_second {
+  background-color: red;
+}
+
+span {
+  font-size: 220px;
+}
