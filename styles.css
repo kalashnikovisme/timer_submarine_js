@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+}
+
+@font-face {
+  font-family: Calibri;
+  src: url("PFBeauSansPro-Bold.ttf");
+}
+
+#timer {
+  font-family: Calibri;
+  margin-left: 5%;
+  margin-top: 16%;
+  color: white;
+}
+
+span {
+  font-size: 220px;
+}
