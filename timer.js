@@ -1,14 +1,18 @@
 const LIMIT = 59;
 
 function decrease_time() {
-  var sec = decrease($("#seconds").html());
-  $("#seconds").html(sec);
+  var sec = $("#seconds").html();
   var min = $("#minutes").html();
+  var hour = $("#hours").html();
+  if ((sec == 0) && (min == 0) && (hour == 0)) {
+    return;
+  }
+  sec = decrease(sec);
+  $("#seconds").html(sec);
   if (sec == LIMIT) {
     min = decrease(min);
     $("#minutes").html(min);
   }
-  var hour = $("#hours").html();
   if((min == LIMIT) && (sec == LIMIT) && (hour != 0)) {
     hour = decrease_number_on_clock(hour);
     $("#hours").html(hour);
